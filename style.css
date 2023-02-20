@@ -92,11 +92,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
    display: none;
 } */
 
-.yith-wcwl-icon.fa.fa-heart-o {
+/* .yith-wcwl-icon.fa.fa-heart-o {
    margin-left: 10px;
-}
+} */
 
-.yith-wcwl-wishlistexistsbrowse {
+/* .yith-wcwl-wishlistexistsbrowse {
    background-color: #7fad39;
    width: 100%;
    display: block;
@@ -109,7 +109,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
    color: #fff;
    font-weight: 600;
    line-height: 22px;
-}
+} */
 
 /* .yith-wcwl-wishlistexistsbrowse .feedback~i,
 .yith-wcwl-wishlistexistsbrowse .feedback~a{
@@ -760,5 +760,50 @@ nav.woocommerce-breadcrumb {
 
 .container.search_content {
    margin: 40px;
+}
+
+.hidden-title-form button i,
+.wishlist-title a.show-title-form i,
+.wishlist_manage_table tfoot a.create-new-wishlist i,
+.wishlist_manage_table tfoot button.submit-wishlist-changes i,
+.wishlist_table .add_to_cart.button i,
+.wishlist_table .ask-an-estimate-button i,
+.yith-wcwl-add-button>a i,
+.yith-wcwl-wishlist-new button i,
+.yith-wcwl-wishlist-search-form button.wishlist-search-button i {
+   margin-right: 0px !important;
+}
+
+.woocommerce a.button.added::after {
+   display: none;
+}
+
+/* .compare.button,
+.compare.button.added {
+   width: 100px;
+   border-radius: 15px;
+   text-transform: uppercase;
+} */
+
+/* .compare.button,
+.compare.button.added:hover {
+   color: white;
+} */
+
+.button.wc-backward.wp-element-button {
+   width: 50%;
+   margin: 0 auto;
+   border-radius: 0px;
+}
+
+
+.woocommerce .star-rating {
+   width: 110px !important;
+   height: 30px !important;
+   float: left;
+}
+
+.woocommerce:before {
+   font-size: 20px;
 }
 

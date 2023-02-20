@@ -164,9 +164,14 @@ get_header();
                         $cat_slug = $cat_items->slug;
             ?>
                         <div class="col-lg-3 col-md-4 col-sm-6 mix <?php echo $cat_slug; ?>">
+
+
                             <?php
                             wc_get_template_part('content', 'product'); ?>
                         </div>
+
+
+
             <?php
                     }
                 }

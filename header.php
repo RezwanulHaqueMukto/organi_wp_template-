@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zxx">
+
+<html <?php language_attributes(); ?> class="no-js no-svg">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="description" content="Ogani Template">
-   <meta name="keywords" content="Ogani, unica, creative, html">
+   <meta charset="<?php bloginfo('charset');  ?>">
+  
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -138,7 +138,7 @@
                   if (the_field('message_', 'option')) {
                      the_field('message_', 'option');
                   } ?>
-         
+
          </ul>
       </div>
    </div>

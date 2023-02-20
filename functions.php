@@ -244,4 +244,36 @@ function wpdocs_theme_slug_widgets_init()
       'description'   => __('Widgets in this area will be shown on all posts and pages.', 'textdomain'),
    ));
 }
+
+
+if (
+   !function_exists('yith_wcwl_custom_remove_from_wishlist_label')
+) {
+   function yith_wcwl_custom_remove_from_wishlist_label($label)
+   {
+      return '';
+   }
+   add_filter('yith_wcwl_remove_from_wishlist_label', 'yith_wcwl_custom_remove_from_wishlist_label');
+}
 add_action('widgets_init', 'wpdocs_theme_slug_widgets_init');
+
+
+// function get_star_rating()
+// {
+//    global $woocommerce, $product;
+//    $average      = $product->get_average_rating();
+//    $review_count = $product->get_review_count();
+
+//    return '<div class="star-rating">
+//                 <span style="width:' . (($average / 5) * 100) . '%" title="' .
+//       $average . '">
+//                     <strong itemprop="ratingValue" class="rating">' . $average . '</strong> ' . __('out of 5', 'woocommerce') .
+//       '</span>                    
+//             </div>' . '
+//             <a href="#reviews" class="woocommerce-review-link" rel="nofollow">( ' . $review_count . ' )</a>';
+// }
+// function custom_shortcode()
+// {
+//    return get_star_rating();
+// }
+// add_shortcode('get_average_rating', 'custom_shortcode');
