@@ -2903,10 +2903,12 @@ ol {
 	font-size: 18px;
 	letter-spacing: 2px;
 }
-.product__item__text ins{
-text-decoration: none;
-font-size: 22px;
+
+.product__item__text ins {
+	text-decoration: none;
+	font-size: 22px;
 }
+
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 
 @media only screen and (min-width: 1200px) {

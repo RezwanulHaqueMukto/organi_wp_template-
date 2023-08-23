@@ -29,7 +29,8 @@ if (empty($product) || !$product->is_visible()) {
 <li <?php wc_product_class('', $product); ?>>
    <div class="product__item">
       <div class="product__item__pic set-bg" data-setbg="<?php the_post_thumbnail_url(); ?>" style="background-image: url(&quot;<?php the_post_thumbnail_url(); ?>&quot;);">
-         <?php woocommerce_show_product_loop_sale_flash(); ?>
+         <?php // woocommerce_show_product_loop_sale_flash(); 
+         ?>
          <ul class="product__item__pic__hover">
             <?php
 
@@ -47,7 +48,9 @@ if (empty($product) || !$product->is_visible()) {
 
             <li><a href="<?php echo site_url(); ?>/?action=yith-woocompare-view-table&amp;iframe=yes" class="compare button" data-product_id="<?php echo get_the_ID(); ?>" rel="nofollow"><i class="fa fa-retweet"></i></a></li>
             <li>
-               <a href="<?php echo site_url(); ?>/?add-to-cart=<?php echo get_the_ID(); ?>" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo get_the_ID(); ?>"><i class="fa fa-shopping-cart"></i></a>
+               <a href="<?php echo site_url(); 
+                        ?>/?add-to-cart=<?php echo get_the_ID(); 
+                                                                  ?>" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo get_the_ID(); ?>"><i class="fa fa-shopping-cart"></i></a>
             </li>
          </ul>
       </div>
